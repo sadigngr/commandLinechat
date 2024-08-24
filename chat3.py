@@ -94,7 +94,7 @@ def chatInterface(stdscr):
 if __name__ == "__main__":
     messages.append("Hosgeldiniz! Lutfen Bir Kullanici Adi Girin.")
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    sock.connect(("192.168.112.191",1331))
+    sock.connect(("20.215.200.163",1331))
     t1 = threading.Thread(target = curses.wrapper,args=(chatInterface,))
     t1.start()
     t2 = threading.Thread(target = getMsg)

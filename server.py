@@ -1,9 +1,9 @@
-from socket import * 
+from socket import *
 import threading
 import time
 
 sock = socket(AF_INET,SOCK_STREAM)
-sock.bind(("192.168.112.191",1331))
+sock.bind(("10.0.0.4",1331))
 sock.listen(10)
 print("Dinleniyor!")
 conList = []
@@ -33,7 +33,7 @@ while True:
     t.start()
 
     print("Dinleniyor!")
-    
+
 
 
 
